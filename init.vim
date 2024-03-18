@@ -1,4 +1,5 @@
 set number
+set shell=/bin/bash
 syntax on
 highlight Visual guibg=grey guifg=black
 highlight Visual ctermbg=grey ctermfg=black

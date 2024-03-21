@@ -41,3 +41,7 @@ set tabstop=2 " tab width
 set shiftwidth=2 " indent size
 set expandtab " use space to instead the tab character
 set smarttab
+
+call plug#begin()
+Plug 'chrisbra/SudoEdit.vim'
+call plug#end()

@@ -31,11 +31,6 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
-augroup cdpwd
-	autocmd!
-	autocmd VimEnter * cd $PWD
-augroup END
-
 " handle tab
 set tabstop=2 " tab width
 set shiftwidth=2 " indent size
@@ -43,5 +38,5 @@ set expandtab " use space to instead the tab character
 set smarttab
 
 call plug#begin()
-Plug 'chrisbra/SudoEdit.vim'
+
 call plug#end()

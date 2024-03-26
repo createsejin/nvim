@@ -62,6 +62,7 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        "rust-analyzer",
       }
     }
   }

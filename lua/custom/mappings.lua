@@ -18,6 +18,8 @@ M.my_general = {
     ["<C-l>"] = { "<C-\\><C-N><C-w>l", "Window right" },
     ["<C-j>"] = { "<C-\\><C-N><C-w>j", "Window down" },
     ["<C-k>"] = { "<C-\\><C-N><C-w>k", "Window up" },
+  },
+  n = {
   }
 }
 return M

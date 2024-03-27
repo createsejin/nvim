@@ -1,3 +1,10 @@
+require("mason").setup()
+require("mason-lspconfig").setup({
+  ensure_installed = {
+    "cmake",
+  },
+})
+
 local base = require("plugins.configs.lspconfig")
 local on_attach = base.on_attach
 local capabilities = base.capabilities
@@ -18,3 +25,5 @@ lspconfig.rust_analyzer.setup({
   filetypes = {"rust"},
   root_dir = lspconfig.util.root_pattern("Cargo.toml"),
 })
+
+lspconfig.cmake.setup({})

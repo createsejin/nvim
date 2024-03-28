@@ -18,6 +18,10 @@ local plugins = {
     event = "VeryLazy",
   },
   {
+    "zbirenbaum/nvterm",
+    event = "BufWinEnter",
+  },
+  {
     "nvim-neotest/nvim-nio",
   },
   {

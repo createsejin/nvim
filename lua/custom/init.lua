@@ -4,3 +4,4 @@ opt.guicursor="n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blink
 opt.relativenumber = true
 opt.encoding = "UTF-8"
 opt.scrolloff = 9
+opt.guifont = "SauceCodePro Nerd Font:h12"

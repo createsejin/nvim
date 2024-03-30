@@ -1,21 +1,35 @@
 local plugins = {
   {
+    "lambdalisue/suda.vim",
+    event = "BufWinEnter",
+  },
+  {
+    "github/copilot.vim",
+    event = "BufWinEnter",
+  },
+  {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
     dependencies = {
       { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
-      { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+      { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
     },
     opts = {
-      debug = true, -- Enable debugging
-      -- See Configuration section for rest
+      debug = false, -- Enable debugging
+      window = {
+        layout = 'float',
+        relative = 'cursor',
+        width = 0.33,
+        height = 0.4,
+        row = 1
+      }
     },
     -- See Commands section for default commands if you want to lazy load on them
-    event = "VeryLazy",
+    event = "BufWinEnter",
   },
   {
-    "github/copilot.vim",
-    event = "VeryLazy",
+    "frazrepo/vim-rainbow",
+    event = "BufWinEnter",
   },
   {
     "zbirenbaum/nvterm",
@@ -59,14 +73,14 @@ local plugins = {
   },
   {
     "mfussenegger/nvim-dap",
-    config = function (_, _)
+    config = function(_, _)
       require("core.utils").load_mappings("dap")
     end
   },
   {
     "saecki/crates.nvim",
-    ft = {"rust", "toml"},
-    config = function (_, opts)
+    ft = { "rust", "toml" },
+    config = function(_, opts)
       local crates = require("crates")
       crates.setup(opts)
       crates.show()
@@ -74,16 +88,16 @@ local plugins = {
   },
   {
     "hrsh7th/nvim-cmp",
-    opts = function ()
+    opts = function()
       local M = require "plugins.configs.cmp"
-      table.insert(M.sources, {name = "crates"})
+      table.insert(M.sources, { name = "crates" })
       return M
     end,
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
     event = "VeryLazy",
-    opts = function ()
+    opts = function()
       return require "custom.configs.null-ls"
     end,
   },
@@ -108,7 +122,7 @@ local plugins = {
   },
   {
     "neovim/nvim-lspconfig",
-    config = function ()
+    config = function()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end,
@@ -116,7 +130,7 @@ local plugins = {
   {
     "rust-lang/rust.vim",
     ft = "rust",
-    init = function ()
+    init = function()
       vim.g.rustfmt_autosave = 1
     end,
   },
@@ -124,16 +138,16 @@ local plugins = {
     "simrat39/rust-tools.nvim",
     ft = "rust",
     dependencies = "neovim/nvim-lspconfig",
-    opts = function ()
+    opts = function()
       return require "custom.configs.rust-tools"
     end,
-    config = function (_, opts)
+    config = function(_, opts)
       require("rust-tools").setup(opts)
     end
   },
   {
     "rmagatti/auto-session",
-    config = function ()
+    config = function()
       require("auto-session").setup({
         log_level = vim.log.levels.ERROR,
         auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
@@ -150,8 +164,9 @@ local plugins = {
         -- ⚠️ This will only work if Telescope.nvim is installed
         vim.keymap.set("n", "<leader>cs",
           require("auto-session.session-lens").search_session, {
-          noremap = true,
-        })
+            noremap = true,
+          }),
+        auto_session_enable_last_session = true,
       })
     end,
     event = "BufWinEnter",

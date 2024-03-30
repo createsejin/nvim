@@ -5,3 +5,4 @@ opt.relativenumber = true
 opt.encoding = "UTF-8"
 opt.scrolloff = 9
 opt.guifont = "SauceCodePro Nerd Font:h12"
+vim.g.rust_recommended_style = false

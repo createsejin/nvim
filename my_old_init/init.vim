@@ -38,4 +38,5 @@ set expandtab " use space to instead the tab character
 set smarttab
 
 call plug#begin()
+Plug 'lambdalisue/suda.vim'
 call plug#end()

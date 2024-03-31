@@ -127,6 +127,15 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
+  { "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        color_overrides = {}
+      })
+    end,
+  },
   {
     "rust-lang/rust.vim",
     ft = "rust",

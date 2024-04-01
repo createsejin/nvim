@@ -127,7 +127,8 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
-  { "catppuccin/nvim",
+  {
+    "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
     config = function()
@@ -179,6 +180,19 @@ local plugins = {
       })
     end,
     event = "BufWinEnter",
+  },
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+      action_keys = {
+        jump = { "<cr>", "<tab>", "<2-leftmouse>" }, -- jump to the diagnostic or open / close folds
+      },
+    },
+    event = "VeryLazy",
   },
 }
 return plugins

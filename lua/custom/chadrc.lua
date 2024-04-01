@@ -12,8 +12,8 @@ M.ui = {
     -- Statement = { fg = "white" },
     -- ["@variable.parameter"] = { fg = "white" },
     -- Character = { fg = "white" },
-    Identifier = { fg = "white" },
     -- ["@character"] = { fg = "white" },
+    Identifier = { fg = "white" },
   },
 }
 M.plugins = "custom.plugins"

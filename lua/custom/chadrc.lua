@@ -52,7 +52,7 @@ M.ui = {
         end
       end)()
       modules[9] = (function()
-        local dir_icon = "%#St_cwd_icon" .. "#" .. " "
+        local dir_icon = "%#St_cwd_icon" .. "#" .. "󰉋 "
         local dir_name = "%#St_cwd_text" .. "#" .. " " .. vim.fn.getcwd() .. " "
         return (vim.o.columns > 85 and ("%#St_cwd_sep" .. "#" .. sep_l .. dir_icon .. dir_name)) or ""
       end)()

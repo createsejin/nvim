@@ -6,3 +6,8 @@ remote: Please see https://docs.github.com/get-started/getting-started-with-git/
 fatal: Authentication failed for 'https://github.com/createsejin/nvim/'
 
 /home/bae/git-credential-manager
+
+fatal: Password store has not been initialized at '/home/bae/.password-store'; run `pass init <gpg-id>` to initialize the store.
+See https://aka.ms/gcm/credstores for more information.
+
+// testtest

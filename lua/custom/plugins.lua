@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "tpope/vim-fugitive",
+    event = "BufRead",
+  },
+  {
     "lambdalisue/suda.vim",
     event = "BufWinEnter",
   },
@@ -25,6 +29,10 @@ local plugins = {
       }
     },
     -- See Commands section for default commands if you want to lazy load on them
+    event = "BufWinEnter",
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
     event = "BufWinEnter",
   },
   {
@@ -160,7 +168,7 @@ local plugins = {
     config = function()
       require("auto-session").setup({
         log_level = vim.log.levels.ERROR,
-        auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+        auto_session_suppress_dirs = { "~/", "/home/bae", "~/Projects", "~/Downloads", "/" },
         -- ⚠️ This will only work if Telescope.nvim is installed
         -- The following are already the default values, no need to provide them if these are already the settings you want.
         session_lens = {

@@ -7,4 +7,6 @@ opt.encoding = "UTF-8"
 opt.scrolloff = 9
 opt.guifont = "SauceCodePro Nerd Font:h12"
 vim.g.rust_recommended_style = false
-
+vim.cmd("let g:netrw_liststyle = 3")
+opt.wrap = false
+vim.cmd([[command! SearchSession lua require('auto-session.session-lens').search_session()]])

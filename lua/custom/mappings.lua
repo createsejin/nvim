@@ -66,6 +66,8 @@ M.my_general = {
   n = {
     ["<leader>cg"] = { "<cmd> Copilot enable <CR>", "Copilot enable" },
     ["<leader>cb"] = { "<cmd> Copilot disable <CR>", "Copilot disable" },
+    ["<leader>wr"] = { "<cmd> SessionRestore <CR>", "Restore session for cwd" },
+    ["<leader>ws"] = { "<cmd> SessionSave <CR>", "Save session for root dir" },
   }
 }
 

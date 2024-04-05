@@ -1,7 +1,7 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
-    "cmake",
+    "cmake", "lua_ls", "bashls", "rust_analyzer",
   },
 })
 
@@ -38,4 +38,9 @@ lspconfig.cmake.setup({
   on_attach = on_attach,
   capabilities = capabilities,
   root_dir = util.root_pattern("CMakeLists.txt"),
+})
+
+lspconfig.bashls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
 })

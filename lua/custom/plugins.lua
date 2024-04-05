@@ -44,6 +44,10 @@ local plugins = {
     event = "BufWinEnter",
   },
   {
+    "prichrd/netrw.nvim",
+    event = "BufWinEnter",
+  },
+  {
     "nvim-neotest/nvim-nio",
   },
   {
@@ -129,6 +133,17 @@ local plugins = {
     },
   },
   {
+    "goolord/alpha-nvim",
+    event = "VimEnter",
+    config = function()
+      require("custom.configs.alpha")
+    end,
+  },
+  {
+    "stevearc/dressing.nvim",
+    event = "VeryLazy",
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"
@@ -168,6 +183,7 @@ local plugins = {
     config = function()
       require("auto-session").setup({
         log_level = vim.log.levels.ERROR,
+        auto_restore_enabled = false,
         auto_session_suppress_dirs = { "~/", "/home/bae", "~/Projects", "~/Downloads", "/" },
         -- ⚠️ This will only work if Telescope.nvim is installed
         -- The following are already the default values, no need to provide them if these are already the settings you want.
@@ -183,6 +199,7 @@ local plugins = {
         vim.keymap.set("n", "<leader>cs",
           require("auto-session.session-lens").search_session, {
             noremap = true,
+            desc = "Search session"
           }),
         auto_session_enable_last_session = true,
       })

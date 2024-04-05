@@ -228,7 +228,7 @@ M.lspconfig = {
       "Add workspace folder",
     },
 
-    ["<leader>wr"] = {
+    ["<leader>ww"] = {
       function()
         vim.lsp.buf.remove_workspace_folder()
       end,

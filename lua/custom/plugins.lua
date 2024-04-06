@@ -140,10 +140,6 @@ local plugins = {
     end,
   },
   {
-    "stevearc/dressing.nvim",
-    event = "VeryLazy",
-  },
-  {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"

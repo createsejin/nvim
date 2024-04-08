@@ -14,10 +14,7 @@ M.ui = {
     -- Character = { fg = "white" },
     -- ["@character"] = { fg = "white" },
     ["@punctuation.bracket"] = { fg = "#d9e0ee" },
-<<<<<<< HEAD
     ["@punctuation.delimiter"] = { fg = "#d9e0ee" },
-=======
->>>>>>> 96d3c73dba38aefba76205aa31f6c9f0cdb64cb6
     Identifier = { fg = "#d9e0ee" },
   },
   statusline = {

@@ -2,7 +2,7 @@
 local M = {}
 M.ui = {
   theme = 'catppuccin',
-  hl_override = {
+  hl_override = { -- :redire @a | highlight | redire END
     -- ["@variable.builtin"] = {
     --   fg = "white",
     -- },
@@ -13,7 +13,8 @@ M.ui = {
     -- ["@variable.parameter"] = { fg = "white" },
     -- Character = { fg = "white" },
     -- ["@character"] = { fg = "white" },
-    Identifier = { fg = "white" },
+    ["@punctuation.bracket"] = { fg = "#d9e0ee" },
+    Identifier = { fg = "#d9e0ee" },
   },
   statusline = {
     separator_style = "arrow",

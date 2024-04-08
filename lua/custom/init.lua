@@ -10,3 +10,5 @@ vim.g.rust_recommended_style = false
 vim.cmd("let g:netrw_liststyle = 3")
 opt.wrap = false
 vim.cmd([[command! SearchSession lua require('auto-session.session-lens').search_session()]])
+vim.cmd('command! Glog Git log --graph')
+vim.g.copilot_enabled = false

@@ -26,6 +26,12 @@ local plugins = {
         width = 0.33,
         height = 0.4,
         row = 1
+      },
+      mappings = {
+        close = {
+          normal = 'q',
+          insert = '<C-x>',
+        }
       }
     },
     -- See Commands section for default commands if you want to lazy load on them

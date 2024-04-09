@@ -1,0 +1,228 @@
+dddddd
+
+    Name              Args Address Complete    Definition
+!|  Alpha             0                        <Lua 251: ~/.local/share/nvim/lazy/alpha-nvim/lua/alpha.lua:749>
+                                               require"alpha".start(false)
+!|  AlphaRedraw       0                        <Lua 252: ~/.local/share/nvim/lazy/alpha-nvim/lua/alpha.lua:758>
+                                               require"alpha".redraw()
+!|  AlphaRemap        0                        <Lua 254: ~/.local/share/nvim/lazy/alpha-nvim/lua/alpha.lua:766>
+                                               manually set keymaps
+    Autosession       1                        <Lua 253: ~/.local/share/nvim/lazy/auto-session/lua/auto-session/init.lua:480>
+    BookmarksList     1                        exe "lua require'marks'.bookmark_state:to_list('loclist', "..<args>..")" | lopen
+    BookmarksListAll  0                        exe "lua require'marks'.bookmark_state:all_to_list()" | lopen
+    BookmarksQFList   1                        exe "lua require'marks'.bookmark_state:to_list('quickfixlist', "..<args>..")" | copen
+    BookmarksQFListAll 0                       exe "lua require'marks'.bookmark_state:all_to_list('quickfixlist')" | copen
+    CmpStatus         0                        <Lua 494: ~/.local/share/nvim/lazy/nvim-cmp/plugin/cmp.lua:57>
+                                               Check status of cmp sources
+    ColorizerAttachToBuffer 0                  <Lua 366: ~/.local/share/nvim/lazy/nvim-colorizer.lua/plugin/colorizer.lua:7>
+    ColorizerDetachFromBuffer 0                <Lua 367: ~/.local/share/nvim/lazy/nvim-colorizer.lua/plugin/colorizer.lua:12>
+    ColorizerReloadAllBuffers 0                <Lua 368: ~/.local/share/nvim/lazy/nvim-colorizer.lua/plugin/colorizer.lua:16>
+    ColorizerToggle   0                        <Lua 370: ~/.local/share/nvim/lazy/nvim-colorizer.lua/plugin/colorizer.lua:20>
+!   Copilot           ?            <Lua function> <Lua 192: ~/.local/share/nvim/lazy/copilot.lua/plugin/copilot.lua:8>
+    CopilotChat       *    .                   <Lua 208: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:782>
+    CopilotChatClose  0                        <Lua 210: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:312>
+    CopilotChatCommit *    .                   <Lua 206: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim Commit
+    CopilotChatCommitStaged * .                <Lua 202: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim CommitStaged
+    CopilotChatDebugInfo * .                   <Lua 199: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/debuginfo.lua:7>
+    CopilotChatDocs   *    .                   <Lua 207: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim Docs
+    CopilotChatExplain *   .                   <Lua 200: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim Explain
+    CopilotChatFix    *    .                   <Lua 203: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim Fix
+    CopilotChatFixDiagnostic * .               <Lua 204: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim FixDiagnostic
+    CopilotChatLoad   *            <Lua function> <Lua 217: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:810>
+    CopilotChatOpen   0                        <Lua 209: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:277>
+    CopilotChatOptimize *  .                   <Lua 201: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim Optimize
+    CopilotChatReset  0                        <Lua 212: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:435>
+    CopilotChatSave   *            <Lua function> <Lua 215: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:807>
+    CopilotChatTests  *    .                   <Lua 205: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:760>
+                                               CopilotChat.nvim Tests
+    CopilotChatToggle 0                        <Lua 211: ~/.local/share/nvim/lazy/CopilotChat.nvim/lua/CopilotChat/init.lua:319>
+    DapContinue       0                        <Lua 62: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:20>
+    DapInstall        *            custom      <Lua 140: ~/.local/share/nvim/lazy/mason-nvim-dap.nvim/lua/mason-nvim-dap/api/command.lua:110>
+                                               Install one or more Nvim-dap adapters.
+    DapLoadLaunchJSON 0                        <Lua 256: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:27>
+    DapRestartFrame   0                        <Lua 133: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:28>
+    DapSetLogLevel    1            <Lua function> <Lua 246: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:9>
+    DapShowLog        0                        split | e /home/bae/.cache/nvim/dap.log | normal! G
+    DapStepInto       0                        <Lua 116: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:24>
+    DapStepOut        0                        <Lua 115: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:25>
+    DapStepOver       0                        <Lua 255: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:23>
+    DapTerminate      0                        <Lua 113: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:26>
+    DapToggleBreakpoint 0                      <Lua 247: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:21>
+    DapToggleRepl     0                        <Lua 249: ~/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua:22>
+    DapUninstall      +            custom      <Lua 139: ~/.local/share/nvim/lazy/mason-nvim-dap.nvim/lua/mason-nvim-dap/api/command.lua:130>
+                                               Uninstall one or more Nvim-dap adapters.
+!   DisableAutoSave   0                        <Lua 149: ~/.local/share/nvim/lazy/auto-session/lua/auto-session/init.lua:886>
+                                               Disable Auto Save
+    DoMatchParen      0                        call s:DoMatchParen()
+!   G                 ?    .       customlist  exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  GBrowse           *    .       customlist  exe fugitive#BrowseCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  GDelete           0                        exe fugitive#DeleteCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  GMove             1            customlist  exe fugitive#MoveCommand(  <line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  GRemove           0                        exe fugitive#RemoveCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  GRename           1            customlist  exe fugitive#RenameCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  GUnlink           0                        exe fugitive#UnlinkCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  Gbrowse           *    .       customlist  echoerr ":Gbrowse has been removed in favor of :GBrowse"
+!   GcLog             ?    .       customlist  :exe fugitive#LogCommand(<line1>,<count>,+"<range>",<bang>0,"<mods>",<q-args>, "c")
+!|  Gcd               ?            customlist  exe fugitive#Cd(<q-args>, 0)
+!   Gclog             ?    .       customlist  :exe fugitive#LogCommand(<line1>,<count>,+"<range>",<bang>0,"<mods>",<q-args>, "c")
+!|  Gdelete           0                        echoerr ":Gdelete has been removed in favor of :GDelete"
+!|  Gdiffsplit        *            customlist  exe fugitive#Diffsplit(1, <bang>0, "<mods>", <q-args>)
+!|  Gdrop             *            customlist  exe fugitive#DropCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  Ge                *            customlist  exe fugitive#Open("edit<bang>", 0, "<mods>", <q-args>)
+!|  Gedit             *            customlist  exe fugitive#Open("edit<bang>", 0, "<mods>", <q-args>)
+!   Ggrep             ?    .  win  customlist  exe fugitive#GrepCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  Ghdiffsplit       *            customlist  exe fugitive#Diffsplit(0, <bang>0, "<mods>", <q-args>)
+!   Git               ?    .       customlist  exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+    Gitsigns          *    .       <Lua function> <Lua 363: ~/.local/share/nvim/lazy/gitsigns.nvim/lua/gitsigns.lua:111>
+!   GlLog             ?    .       customlist  :exe fugitive#LogCommand(<line1>,<count>,+"<range>",<bang>0,"<mods>",<q-args>, "l")
+!|  Glcd              ?            customlist  exe fugitive#Cd(<q-args>, 1)
+!   Glgrep            ?    .  win  customlist  exe fugitive#GrepCommand(0, <count> > 0 ? <count> : 0, +"<range>", <bang>0, "<mods>", <q-args>)
+!   Gllog             ?    .       customlist  :exe fugitive#LogCommand(<line1>,<count>,+"<range>",<bang>0,"<mods>",<q-args>, "l")
+    Glog              0                        Git log --graph
+!|  Gmove             ?            customlist  echoerr ":Gmove has been removed in favor of :GMove"
+!|  Gpedit            *            customlist  exe fugitive#Open("pedit", <bang>0, "<mods>", <q-args>)
+!|  Gr                *    .       customlist  exe fugitive#ReadCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  Gread             *    .       customlist  exe fugitive#ReadCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  Gremove           0                        echoerr ":Gremove has been removed in favor of :GRemove"
+!|  Grename           ?            customlist  echoerr ":Grename has been removed in favor of :GRename"
+!|  Gsplit            *    .  ?    customlist  exe fugitive#Open((<count> > 0 ? <count> : "").(<count> ? "split" : "edit"), <bang>0, "<mods>", <q-args>)
+!|  Gtabedit          *    .  tab  customlist  exe fugitive#Open((<count> >= 0 ? <count> : "")."tabedit", <bang>0, "<mods>", <q-args>)
+!|  Gvdiffsplit       *            customlist  exe fugitive#Diffsplit(0, <bang>0, "vertical <mods>", <q-args>)
+!|  Gvsplit           *    .  ?    customlist  exe fugitive#Open((<count> > 0 ? <count> : "").(<count> ? "vsplit" : "edit!"), <bang>0, "<mods>", <q-args>)
+!|  Gw                *            customlist  exe fugitive#WriteCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  Gwq               *            customlist  exe fugitive#WqCommand(   <line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!|  Gwrite            *            customlist  exe fugitive#WriteCommand(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)
+!   IndentBlanklineDisable 0                   call s:try('lua require("indent_blankline.commands").disable("<bang>" == "!")')
+!   IndentBlanklineEnable 0                    call s:try('lua require("indent_blankline.commands").enable("<bang>" == "!")')
+!   IndentBlanklineRefresh 0                   call s:try('lua require("indent_blankline.commands").refresh("<bang>" == "!")')
+!   IndentBlanklineRefreshScroll 0             call s:try('lua require("indent_blankline.commands").refresh("<bang>" == "!", true)')
+!   IndentBlanklineToggle 0                    call s:try('lua require("indent_blankline.commands").toggle("<bang>" == "!")')
+!   Inspect           0                        <Lua 169: /usr/share/nvim/runtime/plugin/nvim.lua:1>
+                                               Inspect highlights and extmarks at the cursor
+    InspectTree       0    0c ?                <Lua 176: /usr/share/nvim/runtime/plugin/nvim.lua:9>
+                                               Inspect treesitter language tree for buffer
+!|  Lazy              ?            <Lua function> <Lua 250: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/view/commands.lua:95>
+                                               Lazy
+    LspInfo           0                        <Lua 118: ~/.local/share/nvim/lazy/nvim-lspconfig/plugin/lspconfig.lua:63>
+                                               Displays attached, active, and configured language servers
+    LspInstall        *            custom      <Lua 285: ~/.local/share/nvim/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/api/command.lua:107>
+                                               Install one or more LSP servers.
+    LspLog            0                        <Lua 271: ~/.local/share/nvim/lazy/nvim-lspconfig/plugin/lspconfig.lua:153>
+                                               Opens the Nvim LSP client log.
+    LspRestart        ?            <Lua function> <Lua 277: ~/.local/share/nvim/lazy/nvim-lspconfig/plugin/lspconfig.lua:89>
+                                               Manually restart the given language client(s)
+    LspStart          ?            <Lua function> <Lua 273: ~/.local/share/nvim/lazy/nvim-lspconfig/plugin/lspconfig.lua:69>
+                                               Manually launches a language server
+    LspStop           ?            <Lua function> <Lua 279: ~/.local/share/nvim/lazy/nvim-lspconfig/plugin/lspconfig.lua:123>
+                                               Manually stops the given language client(s)
+    LspUninstall      +            custom      <Lua 286: ~/.local/share/nvim/lazy/mason-lspconfig.nvim/lua/mason-lspconfig/api/command.lua:123>
+                                               Uninstall one or more LSP servers.
+    LuaSnipListAvailable 0                     <Lua 378: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:66>
+    LuaSnipUnlinkCurrent 0                     <Lua 381: ~/.local/share/nvim/lazy/LuaSnip/plugin/luasnip.lua:61>
+!|  Man               *    .  ?    <Lua function> <Lua 174: /usr/share/nvim/runtime/plugin/man.lua:6>
+    MarksListAll      0                        exe "lua require'marks'.mark_state:all_to_list()" | lopen
+    MarksListBuf      0                        exe "lua require'marks'.mark_state:buffer_to_list()" | lopen
+    MarksListGlobal   0                        exe "lua require'marks'.mark_state:global_to_list()" | lopen
+    MarksQFListAll    0                        exe "lua require'marks'.mark_state:all_to_list('quickfixlist')" | copen
+    MarksQFListBuf    0                        exe "lua require'marks'.mark_state:buffer_to_list('quickfixlist')" | copen
+    MarksQFListGlobal 0                        exe "lua require'marks'.mark_state:global_to_list('quickfixlist')" | copen
+    MarksToggleSigns  ?                        silent lua require'marks'.toggle_signs(<args>)
+    Mason             0                        <Lua 137: ~/.local/share/nvim/lazy/mason.nvim/lua/mason/api/command.lua:4>
+                                               Opens mason's UI window.
+    MasonInstall      +            <Lua function> <Lua 134: ~/.local/share/nvim/lazy/mason.nvim/lua/mason/api/command.lua:143>
+                                               Install one or more packages.
+    MasonInstallAll   0                        <Lua 213: ~/.config/nvim/lua/plugins/init.lua:109>
+    MasonLog          0                        <Lua 197: ~/.local/share/nvim/lazy/mason.nvim/lua/mason/api/command.lua:266>
+                                               Opens the mason.nvim log.
+    MasonUninstall    +            <Lua function> <Lua 195: ~/.local/share/nvim/lazy/mason.nvim/lua/mason/api/command.lua:210>
+                                               Uninstall one or more packages.
+    MasonUninstallAll 0                        <Lua 136: ~/.local/share/nvim/lazy/mason.nvim/lua/mason/api/command.lua:222>
+                                               Uninstall all packages.
+    MasonUpdate       0                        <Lua 196: ~/.local/share/nvim/lazy/mason.nvim/lua/mason/api/command.lua:234>
+                                               Update Mason registries.
+    NeovideFocus      0                        <Lua 4>
+    NoMatchParen      0                        call s:NoMatchParen()
+    NullLsInfo        0                        <Lua 314: ~/.local/share/nvim/lazy/null-ls.nvim/lua/null-ls/init.lua:32>
+    NullLsLog         0                        <Lua 315: ~/.local/share/nvim/lazy/null-ls.nvim/lua/null-ls/init.lua:35>
+    NvChadUpdate      0                        <Lua 55: ~/.config/nvim/lua/core/init.lua:139>
+    NvCheatsheet      0                        <Lua 160: ~/.local/share/nvim/lazy/ui/lua/nvchad/init.lua:33>
+    Nvdash            0                        <Lua 154: ~/.local/share/nvim/lazy/ui/lua/nvchad/init.lua:11>
+|   NvimTreeClipboard 0                        <Lua 1964: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:70>
+                                               nvim-tree: print clipboard
+|   NvimTreeClose     0                        <Lua 1960: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:24>
+                                               nvim-tree: close
+|   NvimTreeCollapse  0                        <Lua 1630: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:123>
+                                               nvim-tree: collapse
+|   NvimTreeCollapseKeepBuffers 0              <Lua 1629: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:133>
+                                               nvim-tree: collapse, keep directories open
+!|  NvimTreeFindFile  0                        <Lua 1965: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:81>
+                                               nvim-tree: find file
+!   NvimTreeFindFileToggle ?       dir         <Lua 1631: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:97>
+                                               nvim-tree: find file, toggle
+|   NvimTreeFocus     0                        <Lua 1962: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:50>
+                                               nvim-tree: focus
+    NvimTreeHiTest    0                        <Lua 2138: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/api.lua:50>
+                                               nvim-tree: highlight test
+    NvimTreeOpen      ?            dir         <Lua 1953: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:14>
+                                               nvim-tree: open
+|   NvimTreeRefresh   0                        <Lua 1963: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:60>
+                                               nvim-tree: refresh
+|   NvimTreeResize    1                        <Lua 1743: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:113>
+                                               nvim-tree: resize
+    NvimTreeToggle    ?            dir         <Lua 1961: ~/.local/share/nvim/lazy/nvim-tree.lua/lua/nvim-tree/commands.lua:35>
+                                               nvim-tree: toggle
+    NvimWebDeviconsHiTest 0                    <Lua 82: ~/.local/share/nvim/lazy/nvim-web-devicons/lua/nvim-web-devicons.lua:410>
+                                               nvim-web-devicons: highlight test
+    PlenaryBustedDirectory +       file        lua require('plenary.test_harness').test_directory_command([[<args>]])
+    PlenaryBustedFile 1            file        lua require('plenary.test_harness').test_file([[<args>]])
+    RainbowLoad       0                        call rainbow#load()
+    RainbowToggle     0                        call rainbow#toggle()
+    SearchSession     0                        lua require('auto-session.session-lens').search_session()
+!   SessionDelete     *            <Lua function> <Lua 83: ~/.local/share/nvim/lazy/auto-session/lua/auto-session/init.lua:878>
+                                               Delete Session
+    SessionPurgeOrphaned 0                     <Lua 164: ~/.local/share/nvim/lazy/auto-session/lua/auto-session/init.lua:882>
+                                               Remove all orphaned sessions with no directory left
+!   SessionRestore    0                        <Lua 145: ~/.local/share/nvim/lazy/auto-session/lua/auto-session/init.lua:874>
+                                               Restore Session
+!   SessionRestoreFromFile *       <Lua function> <Lua 168: ~/.local/share/nvim/lazy/auto-session/lua/auto-session/init.lua:874>
+                                               Restore Session from file
+!   SessionSave       0                        <Lua 110: ~/.local/share/nvim/lazy/auto-session/lua/auto-session/init.lua:870>
+                                               Save the current session. Based in cwd if no arguments are passed
+    SudaRead          ?            file        call s:read(<q-args>)
+    SudaWrite         ?            file        call s:write(<q-args>)
+|   TSBufDisable      1            custom      lua require'nvim-treesitter.configs'.commands.TSBufDisable['run<bang>'](<f-args>)
+|   TSBufEnable       1            custom      lua require'nvim-treesitter.configs'.commands.TSBufEnable['run<bang>'](<f-args>)
+|   TSBufToggle       1            custom      lua require'nvim-treesitter.configs'.commands.TSBufToggle['run<bang>'](<f-args>)
+|   TSConfigInfo      0                        lua require'nvim-treesitter.configs'.commands.TSConfigInfo['run<bang>'](<f-args>)
+    TSContextDisable  0                        <Lua 234: ~/.local/share/nvim/lazy/nvim-treesitter-context/lua/treesitter-context.lua:165>
+    TSContextEnable   0                        <Lua 233: ~/.local/share/nvim/lazy/nvim-treesitter-context/lua/treesitter-context.lua:130>
+    TSContextToggle   0                        <Lua 235: ~/.local/share/nvim/lazy/nvim-treesitter-context/lua/treesitter-context.lua:172>
+|   TSDisable         +            custom      lua require'nvim-treesitter.configs'.commands.TSDisable['run<bang>'](<f-args>)
+|   TSEditQuery       +            custom      lua require'nvim-treesitter.configs'.commands.TSEditQuery['run<bang>'](<f-args>)
+|   TSEditQueryUserAfter +         custom      lua require'nvim-treesitter.configs'.commands.TSEditQueryUserAfter['run<bang>'](<f-args>)
+|   TSEnable          +            custom      lua require'nvim-treesitter.configs'.commands.TSEnable['run<bang>'](<f-args>)
+!|  TSInstall         +            custom      lua require'nvim-treesitter.install'.commands.TSInstall['run<bang>'](<f-args>)
+!|  TSInstallFromGrammar +         custom      lua require'nvim-treesitter.install'.commands.TSInstallFromGrammar['run<bang>'](<f-args>)
+|   TSInstallInfo     0                        lua require'nvim-treesitter.info'.commands.TSInstallInfo['run<bang>'](<f-args>)
+!|  TSInstallSync     +            custom      lua require'nvim-treesitter.install'.commands.TSInstallSync['run<bang>'](<f-args>)
+|   TSModuleInfo      ?            custom      lua require'nvim-treesitter.info'.commands.TSModuleInfo['run<bang>'](<f-args>)
+|   TSToggle          +            custom      lua require'nvim-treesitter.configs'.commands.TSToggle['run<bang>'](<f-args>)
+|   TSUninstall       +            custom      lua require'nvim-treesitter.install'.commands.TSUninstall['run<bang>'](<f-args>)
+|   TSUpdate          *            custom      lua require'nvim-treesitter.install'.commands.TSUpdate['run<bang>'](<f-args>)
+|   TSUpdateSync      *            custom      lua require'nvim-treesitter.install'.commands.TSUpdateSync['run<bang>'](<f-args>)
+    Telescope         *            <Lua function> <Lua 166: ~/.local/share/nvim/lazy/telescope.nvim/plugin/telescope.lua:107>
+    Trouble           *            custom      lua require'trouble'.open(<f-args>)
+    TroubleClose      0                        lua require'trouble'.close()
+    TroubleRefresh    0                        lua require'trouble'.refresh()
+    TroubleToggle     *            custom      lua require'trouble'.toggle(<f-args>)
+!   WhichKey          *    .       <Lua function> <Lua 98: ~/.local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/cmd.lua:16>
+--No lines in buffer--
+
+ +registers                                                                                                  <bs> go up one level <esc> close <c-u> scroll up <c-d> scroll down 

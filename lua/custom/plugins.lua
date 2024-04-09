@@ -21,11 +21,11 @@ local plugins = {
     opts = {
       debug = false, -- Enable debugging
       window = {
-        layout = 'float',
-        relative = 'cursor',
-        width = 0.33,
-        height = 0.4,
-        row = 1
+        layout = 'vertical',
+        relative = 'editor',
+        width = 0.8,
+        height = 0.6,
+        row = nil,
       },
       mappings = {
         close = {
@@ -66,6 +66,9 @@ local plugins = {
   {
     "prichrd/netrw.nvim",
     event = "BufWinEnter",
+    config = function ()
+      require("custom.configs.netrw")
+    end,
   },
   {
     "nvim-neotest/nvim-nio",

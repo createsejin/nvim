@@ -5,4 +5,5 @@ coc-settings.json
 .luarc.json
 lazy-lock.json
 after
+nvim.sock
 **/.DS_Store

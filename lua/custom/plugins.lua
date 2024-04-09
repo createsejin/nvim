@@ -38,6 +38,20 @@ local plugins = {
     event = "BufWinEnter",
   },
   {
+    "chentoast/marks.nvim",
+    event = "VimEnter",
+    config = function ()
+      require('custom.configs.marks')
+    end
+  },
+  {
+    "tomasky/bookmarks.nvim",
+    event = "VimEnter",
+    config = function ()
+      require("custom.configs.bookmarks")
+    end
+  },
+  {
     "nvim-treesitter/nvim-treesitter-context",
     event = "BufWinEnter",
   },

@@ -11,7 +11,7 @@ M.dap = {
       "Start or continue the debugger",
     },
     ["<leader>du"] = {
-      function ()
+      function()
         local widgets = require("dap.ui.widgets");
         local sidebar = widgets.sidebar(widgets.scopes);
         sidebar.open();
@@ -19,25 +19,25 @@ M.dap = {
       "Open debugging sidebar",
     },
     ["<F10>"] = {
-      function ()
+      function()
         require("dap").step_over();
       end,
       "step_over",
     },
     ["<F11>"] = {
-      function ()
+      function()
         require("dap").step_into();
       end,
       "step_into",
     },
     ["<F12>"] = {
-      function ()
+      function()
         require("dap").step_out();
       end,
       "step_out",
     },
     ["<leader>dl"] = {
-      function ()
+      function()
         require("dap").run_last();
       end,
       "Run last configuration",
@@ -48,12 +48,15 @@ M.dap = {
 M.crates = {
   n = {
     ["<leader>rcu"] = {
-      function ()
+      function()
         require('crates').upgrade_all_crates()
       end,
       "update crates",
     }
   }
+}
+
+M.bookmarks = {
 }
 
 M.my_general = {
@@ -63,11 +66,25 @@ M.my_general = {
     ["<C-j>"] = { "<C-\\><C-N><C-w>j", "Window down" },
     ["<C-k>"] = { "<C-\\><C-N><C-w>k", "Window up" },
   },
+}
+
+M.trouble = {
+  n = {
+    ["<leader>tt"] = { "<cmd> TroubleToggle <CR>", "toggle Trouble list" }
+  }
+}
+
+M.auto_session = {
+  n = {
+    ["<leader>wr"] = { "<cmd> SessionRestore <CR>", "Restore session for cwd" },
+    ["<leader>ws"] = { "<cmd> SessionSave <CR>", "Save session for root dir" },
+  }
+}
+
+M.copilot = {
   n = {
     ["<leader>cg"] = { "<cmd> Copilot enable <CR>", "Copilot enable" },
     ["<leader>cb"] = { "<cmd> Copilot disable <CR>", "Copilot disable" },
-    ["<leader>wr"] = { "<cmd> SessionRestore <CR>", "Restore session for cwd" },
-    ["<leader>ws"] = { "<cmd> SessionSave <CR>", "Save session for root dir" },
   }
 }
 

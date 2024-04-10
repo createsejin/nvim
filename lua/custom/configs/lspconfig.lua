@@ -20,7 +20,7 @@ lspconfig.clangd.setup {
   capabilities = capabilities,
 }
 
---lspconfig.rust_analyzer.setup({
+-- lspconfig.rust_analyzer.setup({
 --  on_attach = on_attach,
 --  capabilities = capabilities,
 --  filetypes = {"rust"},
@@ -32,7 +32,7 @@ lspconfig.clangd.setup {
 --      },
 --    },
 --  },
---})
+-- })
 
 lspconfig.cmake.setup({
   on_attach = on_attach,

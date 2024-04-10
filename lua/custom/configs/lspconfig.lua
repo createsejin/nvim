@@ -13,7 +13,7 @@ local lspconfig = require("lspconfig")
 local util = require "lspconfig/util"
 
 lspconfig.clangd.setup {
-  on_attach = function (client, bufnr)
+  on_attach = function(client, bufnr)
     client.server_capabilities.signatureHelpProvider = false
     on_attach(client, bufnr)
   end,
@@ -43,4 +43,5 @@ lspconfig.cmake.setup({
 lspconfig.bashls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
+  filetypes = { "sh", "zsh" },
 })

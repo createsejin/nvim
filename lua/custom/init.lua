@@ -13,6 +13,3 @@ opt.wrap = false
 vim.cmd([[command! SearchSession lua require('auto-session.session-lens').search_session()]])
 vim.cmd('command! Glog Git log --graph')
 vim.g.copilot_enabled = false
-vim.cmd [[
-  autocmd BufEnter * args
-]]

@@ -56,7 +56,11 @@ M.crates = {
   }
 }
 
-M.bookmarks = {
+M.fugitive = {
+  n = {
+    ["gh"] = { "<cmd> diffget //2 <CR>", "get diff //2" },
+    ["gl"] = { "<cmd> diffget //3 <CR>", "get diff //3" },
+  }
 }
 
 M.my_general = {

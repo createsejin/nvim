@@ -64,6 +64,12 @@ M.fugitive = {
 }
 
 M.my_general = {
+  -- n = {
+  --   ["<C-h>"] = { "<cmd> TmuxNavigateLeft <CR>", "Window left" },
+  --   ["<C-l>"] = { "<cmd> TmuxNavigateRight <CR>", "Window right" },
+  --   ["<C-j>"] = { "<cmd> TmuxNavigateDown <CR>", "Window down" },
+  --   ["<C-k>"] = { "<cmd> TmuxNavigateUp <CR>", "Window up" },
+  -- },
   t = {
     ["<C-h>"] = { "<C-\\><C-N><C-w>h", "Window left" },
     ["<C-l>"] = { "<C-\\><C-N><C-w>l", "Window right" },

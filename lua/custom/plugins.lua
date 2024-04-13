@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "tpope/vim-fugitive",
     event = "BufRead",
   },
@@ -21,15 +25,35 @@ local plugins = {
     opts = {
       debug = false, -- Enable debugging
       window = {
-        layout = 'float',
-        relative = 'cursor',
-        width = 0.33,
-        height = 0.4,
-        row = 1
+        layout = 'vertical',
+        relative = 'editor',
+        width = 0.8,
+        height = 0.6,
+        row = nil,
+      },
+      mappings = {
+        close = {
+          normal = 'q',
+          insert = '<C-x>',
+        }
       }
     },
     -- See Commands section for default commands if you want to lazy load on them
     event = "BufWinEnter",
+  },
+  {
+    "chentoast/marks.nvim",
+    event = "VimEnter",
+    config = function ()
+      require('custom.configs.marks')
+    end
+  },
+  {
+    "tomasky/bookmarks.nvim",
+    event = "VimEnter",
+    config = function ()
+      require("custom.configs.bookmarks")
+    end
   },
   {
     "nvim-treesitter/nvim-treesitter-context",
@@ -46,6 +70,9 @@ local plugins = {
   {
     "prichrd/netrw.nvim",
     event = "BufWinEnter",
+    config = function ()
+      require("custom.configs.netrw")
+    end,
   },
   {
     "nvim-neotest/nvim-nio",
@@ -177,28 +204,7 @@ local plugins = {
   {
     "rmagatti/auto-session",
     config = function()
-      require("auto-session").setup({
-        log_level = vim.log.levels.ERROR,
-        auto_restore_enabled = false,
-        auto_session_suppress_dirs = { "~/", "/home/bae", "~/Projects", "~/Downloads", "/" },
-        -- ⚠️ This will only work if Telescope.nvim is installed
-        -- The following are already the default values, no need to provide them if these are already the settings you want.
-        session_lens = {
-          -- If load_on_setup is set to false, one needs to eventually call `require("auto-session").setup_session_lens()` if they want to use session-lens.
-          buftypes_to_ignore = {}, -- list of buffer types what should not be deleted from current session
-          load_on_setup = true,
-          theme_conf = { border = true },
-          previewer = false,
-        },
-        -- Set mapping for searching a session.
-        -- ⚠️ This will only work if Telescope.nvim is installed
-        vim.keymap.set("n", "<leader>cs",
-          require("auto-session.session-lens").search_session, {
-            noremap = true,
-            desc = "Search session"
-          }),
-        auto_session_enable_last_session = true,
-      })
+      require("custom.configs.auto-session")
     end,
     event = "BufWinEnter",
   },

@@ -1,5 +1,5 @@
 set number
-set shell=/bin/bash
+set shell=/usr/bin/zsh
 syntax on
 
 highlight Visual guibg=grey guifg=black

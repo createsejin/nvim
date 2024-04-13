@@ -10,4 +10,3 @@ fatal: Authentication failed for 'https://github.com/createsejin/nvim/'
 fatal: Password store has not been initialized at '/home/bae/.password-store'; run `pass init <gpg-id>` to initialize the store.
 See https://aka.ms/gcm/credstores for more information.
 
-// testtest

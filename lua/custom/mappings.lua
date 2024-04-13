@@ -84,10 +84,15 @@ M.trouble = {
   }
 }
 
+-- auto session
 M.auto_session = {
   n = {
     ["<leader>wr"] = { "<cmd> SessionRestore <CR>", "Restore session for cwd" },
     ["<leader>ws"] = { "<cmd> SessionSave <CR>", "Save session for root dir" },
+    ["<leader>wd"] = { "<cmd> lua require('auto-session').DisableAutoSave() <CR>",
+      "disable session auto-save" },
+    ["<leader>we"] = { "<cmd> lua require('auto-session').AutoSaveSession() <CR>",
+      "enable session auto-save" },
   }
 }
 

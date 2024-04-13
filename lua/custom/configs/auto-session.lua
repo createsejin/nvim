@@ -1,6 +1,7 @@
 require("auto-session").setup({
   log_level = vim.log.levels.ERROR,
   auto_restore_enabled = false,
+  auto_save_enabled = true,
   auto_session_suppress_dirs = { "~/", "/home/bae", "~/Projects", "~/Downloads", "/" },
   -- ⚠️ This will only work if Telescope.nvim is installed
   -- The following are already the default values, no need to provide them if these are already the settings you want.

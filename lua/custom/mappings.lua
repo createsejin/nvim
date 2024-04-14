@@ -93,6 +93,7 @@ M.auto_session = {
       "disable session auto-save" },
     ["<leader>we"] = { "<cmd> lua require('auto-session').AutoSaveSession() <CR>",
       "enable session auto-save" },
+    ["<leader>wq"] = { "<cmd> Autosession search <CR>", "Auto-session search" },
   }
 }
 

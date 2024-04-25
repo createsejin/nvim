@@ -27,7 +27,7 @@ local plugins = {
       window = {
         layout = 'vertical',
         relative = 'editor',
-        width = 0.8,
+        -- width = 0.8,
         height = 0.6,
         row = nil,
       },

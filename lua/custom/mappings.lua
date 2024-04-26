@@ -69,6 +69,8 @@ M.my_general = {
     ["<C-l>"] = { "<cmd> TmuxNavigateRight <CR>", "Window right" },
     ["<C-j>"] = { "<cmd> TmuxNavigateDown <CR>", "Window down" },
     ["<C-k>"] = { "<cmd> TmuxNavigateUp <CR>", "Window up" },
+    -- nvim tree toggle
+    ["<C-q>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
     -- argument keys
     ["<M-n>"] = { "<cmd> n <CR>" },
     ["2<M-n>"] = { "<cmd> 2n <CR>" },

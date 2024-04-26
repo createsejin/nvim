@@ -44,13 +44,25 @@ local plugins = {
   {
     "tomasky/bookmarks.nvim",
     event = "VimEnter",
-    config = function ()
+    config = function()
       require("custom.configs.bookmarks")
     end
   },
   {
     "szw/vim-maximizer",
     event = "VimEnter",
+  },
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { 
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim" 
+    },
+    event = "VeryLazy",
+    config = function ()
+      require("custom.configs.harpoon")
+    end
   },
   {
     "nvim-treesitter/nvim-treesitter-context",
@@ -67,7 +79,7 @@ local plugins = {
   {
     "prichrd/netrw.nvim",
     event = "BufWinEnter",
-    config = function ()
+    config = function()
       require("custom.configs.netrw")
     end,
   },

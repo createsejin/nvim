@@ -49,6 +49,10 @@ local plugins = {
     end
   },
   {
+    "szw/vim-maximizer",
+    event = "VimEnter",
+  },
+  {
     "nvim-treesitter/nvim-treesitter-context",
     event = "BufWinEnter",
   },

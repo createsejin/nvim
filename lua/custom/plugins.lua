@@ -55,9 +55,9 @@ local plugins = {
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
-    dependencies = { 
+    dependencies = {
       "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim" 
+      "nvim-telescope/telescope.nvim",
     },
     event = "VeryLazy",
     config = function ()

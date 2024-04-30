@@ -17,3 +17,12 @@ vim.cmd([[command! SearchSession lua require('auto-session.session-lens').search
 vim.cmd('command! Glog Git log --graph')
 vim.cmd([[autocmd BufEnter * file]])
 vim.g.copilot_enabled = false
+vim.cmd([[
+  function! Arg_number_list()
+    let l:args = argv()
+    let l:max_len = len(len(l:args))
+    for l:i in range(len(l:args))
+      echo printf('%' . l:max_len . 'd: %s', l:i + 1, l:args[l:i])
+    endfor
+  endfunction
+]])

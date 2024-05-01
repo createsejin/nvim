@@ -22,8 +22,8 @@ vim.cmd([[
     let l:args = argv()
     let l:max_len = len(len(l:args))
     for l:i in range(len(l:args))
-      let l:prefix = l:i == argidx() ? '>' : ' '
-      echo printf('%' . l:max_len . 'd:%s%s', l:i + 1, l:prefix, l:args[l:i])
+      let l:prefix = l:i == argidx() ? '> ' : ': '
+      echo printf('%' . l:max_len . 'd%s%s', l:i + 1, l:prefix, l:args[l:i])
     endfor
   endfunction
 ]])

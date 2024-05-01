@@ -73,6 +73,7 @@ M.my_general = {
     -- nvim tree toggle
     ["<C-q>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
     -- argument keys
+    ["<M-s>"] = { "<cmd> call Arg_number_list() <CR>" },
     ["<M-n>"] = { "<cmd> n <CR>" },
     ["2<M-n>"] = { "<cmd> 2n <CR>" },
     ["3<M-n>"] = { "<cmd> 3n <CR>" },
@@ -87,7 +88,6 @@ M.my_general = {
     ["5<M-p>"] = { "<cmd> 5N <CR>" },
     ["6<M-p>"] = { "<cmd> 6N <CR>" },
     ["7<M-p>"] = { "<cmd> 7N <CR>" },
-    ["<M-s>"] = { "<cmd> call Arg_number_list() <CR>" },
     ["g1"] = { "<cmd> argu1 <CR>" },
     ["g2"] = { "<cmd> argu2 <CR>" },
     ["g3"] = { "<cmd> argu3 <CR>" },

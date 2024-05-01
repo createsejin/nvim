@@ -128,7 +128,10 @@ M.my_general = {
     ["g38"] = { "<cmd> argu38 <CR>" },
     ["g39"] = { "<cmd> argu39 <CR>" },
     -- mks! populate key
-    ["<leader>ms"] = { ":mks! ~/se/", "populate ':mks! ~/se/'" },
+    ["<leader>mk"] = { ":mks! ~/se/", "populate ':mks! ~/se/'" },
+    ["<leader>ms"] = { ":so ~/se/", "populate ':so ~/se/'" },
+    -- /@# search populate
+    ["<leader>s"] = { "/@#", "populate /@#" },
     -- horizontal scroll
     ["<M-H>"] = { "3zh" },
     ["<M-L>"] = { "3zl" },

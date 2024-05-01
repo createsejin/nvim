@@ -130,8 +130,8 @@ M.my_general = {
     -- mks! populate key
     ["<leader>ms"] = { ":mks! ~/se/", "populate ':mks! ~/se/'" },
     -- horizontal scroll
-    ["<C-S-H>"] = { "3zh" },
-    ["<C-S-L>"] = { "3zl" },
+    ["<M-H>"] = { "3zh" },
+    ["<M-L>"] = { "3zl" },
   },
   t = {
     ["<C-h>"] = { "<C-\\><C-N><C-w>h", "Window left" },

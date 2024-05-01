@@ -127,6 +127,8 @@ M.my_general = {
     ["g37"] = { "<cmd> argu37 <CR>" },
     ["g38"] = { "<cmd> argu38 <CR>" },
     ["g39"] = { "<cmd> argu39 <CR>" },
+    -- mks! populate key
+    ["<leader>ms"] = { ":mks! ~/se/", "populate ':mks! ~/se/'" },
     -- horizontal scroll
     ["<C-S-H>"] = { "3zh" },
     ["<C-S-L>"] = { "3zl" },

@@ -15,8 +15,12 @@ vim.cmd("let g:netrw_liststyle = 3")
 opt.wrap = false
 vim.cmd([[command! SearchSession lua require('auto-session.session-lens').search_session()]])
 vim.cmd('command! Glog Git log --graph')
+-- session command
+vim.cmd('command! Se !ls ~/se')
+-- autocmd for argument number
 vim.cmd([[autocmd BufEnter * file]])
 vim.g.copilot_enabled = false
+-- argument number list
 vim.cmd([[
   function! Arg_number_list()
     let l:args = argv()

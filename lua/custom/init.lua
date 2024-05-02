@@ -31,3 +31,11 @@ vim.cmd([[
     endfor
   endfunction
 ]])
+function Mksession()
+  vim.cmd('!ls --ignore=storage ~/se')
+  vim.fn.input(':mks! ~/se/')
+end
+function Source_session()
+  vim.cmd('!ls --ignore=storage ~/se')
+  vim.fn.input(':so ~/se/')
+end

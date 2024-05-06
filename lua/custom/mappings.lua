@@ -130,6 +130,7 @@ M.my_general = {
     -- mks! populate key
     ["<leader>mk"] = { "<cmd> lua Mksession() <CR>", "populate ':mks! ~/se/'" },
     ["<leader>ms"] = { "<cmd> lua Source_session() <CR>", "populate ':so ~/se/'" },
+    -- ["<leader>ms"] = { "<cmd> Se", "populate ':so ~/se/'" },
     -- /@# search populate
     ["<leader>s"] = { "/@#", "populate /@#" },
     -- horizontal scroll

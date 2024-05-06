@@ -35,8 +35,12 @@ local plugins = {
         close = {
           normal = 'q',
           insert = '<C-x>',
+        },
+        reset = {
+          normal = '<M-l>',
+          insert = '<M-l>',
         }
-      }
+      },
     },
     -- See Commands section for default commands if you want to lazy load on them
     event = "BufWinEnter",

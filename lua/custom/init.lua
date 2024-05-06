@@ -16,7 +16,7 @@ opt.wrap = false
 vim.cmd([[command! SearchSession lua require('auto-session.session-lens').search_session()]])
 vim.cmd('command! Glog Git log --graph')
 -- session command
-vim.cmd('command! Se !ls ~/se')
+vim.cmd('command! Se !ls --ignore=storage ~/se')
 -- autocmd for argument number
 vim.cmd([[autocmd BufEnter * file]])
 vim.g.copilot_enabled = false
@@ -33,9 +33,13 @@ vim.cmd([[
 ]])
 function Mksession()
   vim.cmd('!ls --ignore=storage ~/se')
-  vim.fn.input(':mks! ~/se/')
+  vim.fn.setreg('r', 'mks! ~/se/')
+  vim.api.nvim_feedkeys(':', 'n', true)
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-r>r', true, true, true), 'n', true)
 end
 function Source_session()
   vim.cmd('!ls --ignore=storage ~/se')
-  vim.fn.input(':so ~/se/')
+  vim.fn.setreg('r', 'so ~/se/')
+  vim.api.nvim_feedkeys(':', 'n', true)
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-r>r', true, true, true), 'n', true)
 end

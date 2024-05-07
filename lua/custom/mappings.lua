@@ -132,7 +132,7 @@ M.my_general = {
     ["<leader>ms"] = { "<cmd> lua Source_session() <CR>", "populate ':so ~/se/'" },
     -- ["<leader>ms"] = { "<cmd> Se", "populate ':so ~/se/'" },
     -- /@# search populate
-    ["<leader>s"] = { "/@#", "populate /@#" },
+    ["<M-z>"] = { "/@#", "populate /@#" },
     -- horizontal scroll
     ["<M-H>"] = { "3zh" },
     ["<M-L>"] = { "3zl" },

@@ -43,3 +43,9 @@ function Source_session()
   vim.api.nvim_feedkeys(':', 'n', true)
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-r>r', true, true, true), 'n', true)
 end
+function Mkview()
+  vim.cmd('!ls view')
+  vim.fn.setreg('r', 'mkvie! view/')
+  vim.api.nvim_feedkeys(':', 'n', true)
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-r>r', true, true, true), 'n', true)
+end

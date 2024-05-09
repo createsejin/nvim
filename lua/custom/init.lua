@@ -55,3 +55,7 @@ function Source_view()
   vim.api.nvim_feedkeys(':', 'n', true)
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<C-r>r', true, true, true), 'n', true)
 end
+
+vim.cmd('autocmd BufEnter * silent! :iunabbrev <buffer> *')
+vim.cmd('autocmd BufEnter *.rs silent! :iabbrev <buffer> #t #[test]')
+vim.cmd('autocmd BufEnter *.rs silent! :iabbrev <buffer> #d #[allow(dead_code)]')

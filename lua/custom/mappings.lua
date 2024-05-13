@@ -139,6 +139,7 @@ M.my_general = {
     ["<M-L>"] = { "3zl" },
   },
   t = {
+    ["<M-s>"] = { "<cmd> call Arg_number_list() <CR>" },
     ["<C-h>"] = { "<C-\\><C-N><C-w>h", "Window left" },
     ["<C-l>"] = { "<C-\\><C-N><C-w>l", "Window right" },
     ["<C-j>"] = { "<C-\\><C-N><C-w>j", "Window down" },

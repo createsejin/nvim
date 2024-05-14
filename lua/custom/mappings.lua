@@ -65,6 +65,7 @@ M.fugitive = {
 
 M.my_general = {
   n = {
+    ["<F3>"] = { "<cmd> :MaximizerToggle <CR>", "maximazer toggle" },
     ["<C-h>"] = { "<cmd> TmuxNavigateLeft <CR>", "Window left" },
     ["<C-l>"] = { "<cmd> TmuxNavigateRight <CR>", "Window right" },
     ["<C-j>"] = { "<cmd> TmuxNavigateDown <CR>", "Window down" },
@@ -139,6 +140,7 @@ M.my_general = {
     ["<M-L>"] = { "3zl" },
   },
   t = {
+    ["<F3>"] = { "<cmd> :MaximizerToggle <CR>", "maximazer toggle" },
     ["<M-s>"] = { "<cmd> call Arg_number_list() <CR>" },
     ["<M-n>"] = { "<cmd> n <CR>" },
     ["2<M-n>"] = { "<cmd> 2n <CR>" },

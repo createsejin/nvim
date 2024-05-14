@@ -59,3 +59,7 @@ end
 vim.cmd('autocmd BufEnter * silent! :iunabbrev <buffer> *')
 vim.cmd('autocmd BufEnter *.rs silent! :iabbrev <buffer> #t #[test]')
 vim.cmd('autocmd BufEnter *.rs silent! :iabbrev <buffer> #d #[allow(dead_code)]')
+
+vim.keymap.set("n", "[v", function()
+  require("treesitter-context").go_to_context(vim.v.count1)
+end, { silent = true })

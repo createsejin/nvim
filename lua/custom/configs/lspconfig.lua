@@ -45,3 +45,9 @@ lspconfig.bashls.setup({
   capabilities = capabilities,
   filetypes = { "sh", "zsh" },
 })
+
+require("roslyn").setup({
+    dotnet_cmd = "dotnet", -- this is the default
+    on_attach = on_attach, -- required
+    capabilities = capabilities, -- required
+})

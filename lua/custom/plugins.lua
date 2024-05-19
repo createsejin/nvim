@@ -215,6 +215,10 @@ local plugins = {
     end
   },
   {
+    "jmederosalvarado/roslyn.nvim",
+    event = "VeryLazy",
+  },
+  {
     "rmagatti/auto-session",
     config = function()
       require("custom.configs.auto-session")

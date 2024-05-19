@@ -6,8 +6,8 @@ opt.shell = "cmd"
 opt.relativenumber = true
 opt.encoding = "UTF-8"
 opt.scrolloff = 9
-opt.guifont = "Source Code Pro,SauceCodePro Nerd Font:h11.92"
--- opt.guifont = "SauceCodePro Nerd Font:h11.92"
+opt.guifont = "Source Code Pro,SauceCodePro Nerd Font,D2Coding:h11.92"
+vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;$PSStyle.OutputRendering = [System.Management.Automation.OutputRendering]::PlainText;"
 vim.g.neovide_fullscreen = true
 opt.linespace = 0
 vim.g.neovide_scale_factor = 1.0
